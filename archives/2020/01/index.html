@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>NoWhere</title>
+  <title>Archives: 2020/1 | NoWhere</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="NoWhere">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2020/01/index.html">
 <meta property="og:site_name" content="NoWhere">
 <meta property="article:author" content="AlfredChen1991">
 <meta name="twitter:card" content="summary">
@@ -151,60 +151,34 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-ShareX图床" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/01/01/ShareX%E5%9B%BE%E5%BA%8A/" class="archive-article-date">
+  	<time datetime="2020-01-01T09:43:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-01</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/01/ShareX%E5%9B%BE%E5%BA%8A/">Markdown写作必备:ShareX工作流+图床</a>
+      <a class="archive-article-title" href="/2020/01/01/ShareX%E5%9B%BE%E5%BA%8A/">Markdown写作必备:ShareX工作流+图床</a>
     </h1>
   
 
-        
-        <a href="/2020/01/01/ShareX%E5%9B%BE%E5%BA%8A/" class="archive-article-date">
-  	<time datetime="2020-01-01T09:43:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Markdown写作一定会碰到的问题就是图的问题，我自己的解决方案是ShareX + SM.MS图床。</p>
-<p>ShareX提供了截图后上传，以及上传后自动复制网址到剪贴板，将这两个动作连贯起来，体验还是比较舒服的。</p>
-<h3 id="ShareX"><a href="#ShareX" class="headerlink" title="ShareX"></a>ShareX</h3><p>ShareX在<a href="https://getsharex.com/" target="_blank" rel="noopener">官网</a>下载安装即可。ShareX是开源的，源码托管在Github:<a href="https://github.com/ShareX/ShareX" target="_blank" rel="noopener">ShareX</a></p>
-<p><img src="http://suo.im/5INXtF" alt="ShareX 官网"></p>
-<h3 id="SM-MS图床"><a href="#SM-MS图床" class="headerlink" title="SM.MS图床"></a>SM.MS图床</h3><p>当时从V2EX上看到这个图床，目前来看还是可用的。</p>
-<p>在ShareX里点击: 上传至… -&gt; 自定义上传目标…</p>
-<p>然后按图设置:</p>
-<p>请求Tab页:</p>
-<p><img src="http://suo.im/6kCk1X" alt="ShareX配置SM.MS图床"></p>
-<p>响应Tab页:</p>
-<p><img src="http://suo.im/6s8w2Q" alt="ShareX设置SM.MS图床"></p>
-<p>配置完成后可以测试一下。</p>
-<p>或者可以将如下配置保存成文件后导入:</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"Version"</span>: <span class="string">"12.4.1"</span>,</span><br><span class="line">  <span class="attr">"Name"</span>: <span class="string">"SM.MS图床"</span>,</span><br><span class="line">  <span class="attr">"DestinationType"</span>: <span class="string">"ImageUploader"</span>,</span><br><span class="line">  <span class="attr">"RequestMethod"</span>: <span class="string">"POST"</span>,</span><br><span class="line">  <span class="attr">"RequestURL"</span>: <span class="string">"https://sm.ms/api/upload"</span>,</span><br><span class="line">  <span class="attr">"Body"</span>: <span class="string">"MultipartFormData"</span>,</span><br><span class="line">  <span class="attr">"Arguments"</span>: &#123;</span><br><span class="line">    <span class="attr">"ssl"</span>: <span class="string">"false"</span>,</span><br><span class="line">    <span class="attr">"format"</span>: <span class="string">"json"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"FileFormName"</span>: <span class="string">"smfile"</span>,</span><br><span class="line">  <span class="attr">"URL"</span>: <span class="string">"$json:data.url$"</span>,</span><br><span class="line">  <span class="attr">"DeletionURL"</span>: <span class="string">"$json:data.delete$"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>然后在ShareX配置截图后上传和上传后复制网址:</p>
-<p><img src="http://suo.im/5XZxxd" alt="截图后动作"></p>
-<p><img src="http://suo.im/6jSdnu" alt="上传后动作"></p>
-<h3 id="短连接"><a href="#短连接" class="headerlink" title="短连接"></a>短连接</h3><p>从以上截图还看到，其实我还配置了短连接，用的是suomi，有兴趣的同学可以自己配置一下，这里提供suomi的配置json</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"Version"</span>: <span class="string">"13.0.1"</span>,</span><br><span class="line">  <span class="attr">"Name"</span>: <span class="string">"suomi短网址"</span>,</span><br><span class="line">  <span class="attr">"DestinationType"</span>: <span class="string">"URLShortener"</span>,</span><br><span class="line">  <span class="attr">"RequestMethod"</span>: <span class="string">"GET"</span>,</span><br><span class="line">  <span class="attr">"RequestURL"</span>: <span class="string">"http://suo.im/api.htm"</span>,</span><br><span class="line">  <span class="attr">"Parameters"</span>: &#123;</span><br><span class="line">    <span class="attr">"url"</span>: <span class="string">"$input$"</span>,</span><br><span class="line">    <span class="attr">"key"</span>: <span class="string">"!!!your key!!!"</span>,</span><br><span class="line">    <span class="attr">"expireType"</span>: <span class="string">"6"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>suomi是需要注册获取key的，上面配置隐去了我的key，大家替换成自己的key即可。</p>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>其实还想过看能不能用github当图床，想着是自己写个工程，跑在本地或者云上，然后提供接口，调用接口上传图片到github或者gitee。</p>
-<p>目前还只是想法，暂未试试。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -220,173 +194,19 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/01/ShareX%E5%9B%BE%E5%BA%8A/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-Hexo-install" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/25/Hexo-install/">一篇文章搞定Github Pages托管Hexo博客</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/25/Hexo-install/" class="archive-article-date">
-  	<time datetime="2019-04-24T18:12:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-基本环境搭建"><a href="#1-基本环境搭建" class="headerlink" title="1.基本环境搭建"></a>1.基本环境搭建</h2><p>诚如Hexo文档所言，搭建Hexo非常简单。可以参考<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">官方文档</a>准备好本地环境。</p>
-<p>唯一需要说明的就是安装好npm以后需要设置npm镜像服务器地址为淘宝镜像，否则可能出现npm下载速度慢的问题。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm config <span class="built_in">set</span> registry http://registry.npm.taobao.org</span></span><br></pre></td></tr></table></figure>
-
-<p>对node.js感兴趣的同学可以自行访问<a href="http://npm.taobao.org/" target="_blank" rel="noopener">TaoBaoNPM</a>进行学习，淘宝还改了个cnpm可以取代默认的npm…</p>
-<p>如果设置registry成功可以通过命令:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm config list | findstr registry</span></span><br></pre></td></tr></table></figure>
-
-<p>看到返回:</p>
-<p><img src="http://ww1.sinaimg.cn/large/69110301ly1g2e7cbeywvj20it0bemx5.jpg" alt="NPM Registry设置结果"></p>
-<p>然后按照官方文档要求安装安装hexo-cli包</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p><img src="http://ww1.sinaimg.cn/large/69110301ly1g2e7fyz9lij20ph0ei74o.jpg" alt="hexo-cli安装">    </p>
-<p>至此，hexo-cli安装完毕，剩下的就是安装git了，因为之后hexo初始化本地目录时实际会调用git命令!</p>
-<p><strong>Git的安装本教程不进行说明，请同学们自行完成。</strong></p>
-<p>接下来就进入建站过程了</p>
-<h2 id="2-站点搭建"><a href="#2-站点搭建" class="headerlink" title="2.站点搭建"></a>2.站点搭建</h2><p>选择一个目录作为本地hexo目录，然后再本目录下进行初始化工作:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo init ./Blog</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> ./Blog</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install</span></span><br></pre></td></tr></table></figure>
-
-<p>执行过程中可能出现NPM的审计检查报告:</p>
-<p><img src="http://ww1.sinaimg.cn/large/69110301ly1g2e7rlv6wlj212t0cbmy6.jpg" alt="npm 审计检查报告"></p>
-<p>当依赖项中可能存在漏洞时会发出这个警告，按照提示键入</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm audit fix</span></span><br></pre></td></tr></table></figure>
-
-<p>即可，但有时候你可能会失望，比如此次修复就无济于事 😂</p>
-<p><img src="http://ww1.sinaimg.cn/large/69110301ly1g2e8421iu1j2104042dfy.jpg" alt="NPM 审计修复失败"></p>
-<p>算了，小事情，继续前进。至此，你的目录下应该已经建好了站点的骨架。下一步就是进行配置了。</p>
-<h2 id="3-站点配置"><a href="#3-站点配置" class="headerlink" title="3.站点配置"></a>3.站点配置</h2><p>这部分才考<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">官方文档</a>即可</p>
-<h2 id="4-本地启动站点"><a href="#4-本地启动站点" class="headerlink" title="4.本地启动站点"></a>4.本地启动站点</h2><p>如果前面的步骤都没问题，只消一句即可本地启动站点，之后也可以通过本地启动站点来测试对网页的修改后再部署到服务器端。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo server</span></span><br></pre></td></tr></table></figure>
-
-<p>默认端口是4000，打开网页，如果出现页面则表明成功!</p>
-<p><img src="http://ww1.sinaimg.cn/large/69110301ly1g2e8km4vajj21hk0t4b0x.jpg" alt="本地搭建好的Hexo博客"></p>
-<h2 id="5-更换主题"><a href="#5-更换主题" class="headerlink" title="5.更换主题"></a>5.更换主题</h2><p>本次安装使用的主题为<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">yilia</a>。</p>
-<p>进入博客目录下的theme目录，将主题克隆到本地</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> theme</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git ./yilia</span></span><br></pre></td></tr></table></figure>
-
-<p>然后将_config.yml中的的theme值改为yilia，然后重启服务即可</p>
-<p><img src="http://ww1.sinaimg.cn/large/69110301ly1g2e8qjm0ccj21020k8n55.jpg" alt="修改主题后的博客"></p>
-<h2 id="6-使用Github-Pages服务托管博客"><a href="#6-使用Github-Pages服务托管博客" class="headerlink" title="6.使用Github Pages服务托管博客"></a>6.使用Github Pages服务托管博客</h2><p>这里请参考github官方<a href="https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages" target="_blank" rel="noopener">Github Pages发布源配置文档</a>创建承载博客的仓库</p>
-<h2 id="7-部署站点到Github-Pages"><a href="#7-部署站点到Github-Pages" class="headerlink" title="7.部署站点到Github Pages"></a>7.部署站点到Github Pages</h2><p>安装git部署功能:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-deployer-git --save</span></span><br></pre></td></tr></table></figure>
-
-<p>根据<a href="https://hexo.io/zh-cn/docs/deployment" target="_blank" rel="noopener">官方文档</a>配置好_config.yml</p>
-<p>然后一键部署到github:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">其实hexo deploy -g可以完成下面两句的命令</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo generate</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo deploy</span></span><br></pre></td></tr></table></figure>
-
-<p>成功后，博客就出来了:</p>
-<p><img src="http://ww1.sinaimg.cn/large/69110301ly1g2e9kqk5x5j21020k810s.jpg" alt="博客已经部署到Github Pages"></p>
-<p><strong>这里需要注意的是每次对本地代码做了变动都需要先执行generate在deploy</strong></p>
-<h2 id="8-发布文章"><a href="#8-发布文章" class="headerlink" title="8.发布文章"></a>8.发布文章</h2><p>这里可以参考Hexo提供的<a href="https://hexo.io/zh-cn/docs/writing" target="_blank" rel="noopener">文档</a>进行操作。基本步骤如下:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">1.生成文章，在<span class="built_in">source</span>/_posts目录下会出现HelloWorld.md文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo new post HelloWorld</span></span><br><span class="line"><span class="meta">#</span><span class="bash">2.编辑HelloWorld.md</span></span><br><span class="line">...</span><br><span class="line"><span class="meta">#</span><span class="bash">3.文章编辑完成后，生成站点内容并提交文章</span></span><br><span class="line">hexo deploy -g</span><br></pre></td></tr></table></figure>
-
-<p>经过上述步骤，新文章就会被推送到！</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Blog</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/25/Hexo-install/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -408,9 +228,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
